@@ -10,63 +10,85 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Blurry Loading</title>
+    <title>Portfolio Site</title>
   </head>
-  <script
-    src="https://kit.fontawesome.com/c16b2c8005.js"
-    crossorigin="anonymous"
-  ></script>
   <body>
-    <div class="container bg">
-      <div class="pages">
-        <div class="page one ">
-          <div class="diagonal">
-          </div>
-          <span class="quote">
-            <br>"</br>
-            
-            Design is the intermediary between information and understanding.<br class="quote-right">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"</br> -- Hans Hoffman</span>
-          <!-- <img class="headshot" alt="headshot" src='Images/headshot.jpg' /> -->
-          <div class="loading-text">0%</div>
-          <div class="arrows">
-            <button onclick="slide('prev')" class="btn icon next">
-              <i class="fas fa-arrow-left hide"></i>
-            </button>
-            <button onclick="slide('next')" class="btn icon next">
-              <i class="fas fa-arrow-right"></i>
-            </button>
-          </div>
+    <container>
+      <section id="home">
+        <img
+          id="bg-home"
+          src="https://images.unsplash.com/photo-1633432695542-b2c8e2b8a26c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4MzI5NzQ2MA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+        />
+        <nav>
+          <div><strong>Colton</strong> Skiera</div>
+          <ul class="nav">
+            <li class="nav">Home</li>
+            <li class="nav">About Me</li>
+            <li class="nav">Portfolio</li>
+            <li class="nav">Contact Me</li>
+          </ul>
+        </nav>
+        <div id="intro">
+          <p id="intro-para">
+            Web development <br />
+            and <br />
+            design to build your dreams
+          </p>
         </div>
-        <div class="page two">
-          <div class="arrows">
-            <button onclick="slide('prev')" class="btn icon next">
-              <i class="fas fa-arrow-left"></i>
-            </button>
-            <button onclick="slide('next')" class="btn icon next">
-              <i class="fas fa-arrow-right"></i>
-            </button>
+      </section>
+    </container>
+    <container class="shadow-card">
+      <section id="about-me">
+        <div class="triangle triangle1"></div>
+        <div class="triangle triangle2"></div>
+        <div class="triangle triangle3"></div>
+        <div class="triangle triangle4"></div>
+        <div class="triangle triangle5"></div>
+        <div class="triangle triangle6"></div>
+        <div class="triangle triangle7"></div>
+        <div class="triangle triangle8"></div>
+        <div class="row">
+          <div class="card">
+            <div class="about-align">
+              <h1><strong>about.</strong></h1>
+            </div>
+            <p class="title-intro">Front-End developer out of Parker, CO.</p>
+            <p class="about-para">
+              I enjoy challenging myself to write flexible and maintainable code
+              that you can rely on for years to come. When I'm not coding,
+              you’ll probably find me exercising or hanging with my kids.
+            </p>
           </div>
+          <img id="headshot" src="Images/headshot.jpg" />
         </div>
-        <div class="page three">
-          <div class="arrows">
-            <button onclick="slide('prev')" class="btn icon next">
-              <i class="fas fa-arrow-left"></i>
-            </button>
-            <button onclick="slide('next')" class="btn icon next">
-              <i class="fas fa-arrow-right"></i>
-            </button>
-          </div>
+      </section>
+    </container>
+    <section id="facts">
+      <div class="row">
+        <img
+          class="grogu"
+          src="https://images.unsplash.com/photo-1611250535839-94b88cf88bba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4MzM5NjcyOA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+        />
+        <div class="card">
+          <div class="title-intro">Random facts.</div>
+
+          <ul id="facts-list">
+            <li class="facts">Dog person</li>
+            <li class="facts">Passionate about gaming</li>
+            <li class="facts">I love to cook(and eat)</li>
+            <li class="facts">I like to build and improve things</li>
+            <li class="facts">Huge Star Wars fan</li>
+            <li class="facts">Learning is my life blood</li>
+            <li class="facts">Huge Star Wars fan</li>
+            <li class="facts">Huge Star Wars fan</li>
+          </ul>
         </div>
-        <div class="page four">
-          <div class="arrows">
-            <button onclick="slide('prev')" class="btn icon next">
-              <i class="fas fa-arrow-left"></i>
-            </button>
-            <button onclick="slide('next')" class="btn icon next">
-              <i class="fas fa-arrow-right"></i>
-            </button>
-          </div>
-        </div>
+      </div>
+    </section>
+    <section id="contact-me">
+      <div id="contact-card"></div>
+    </section>
+
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contactstyle.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <section id="contact-me">
+      <div class="contact-me">
+        <h1><strong>contact.</strong></h1>
+        <p class="title-intro">
+          Get in touch with me or see what I've been working on lately.
+        </p>
+      </div>
+    </section>
+
+    <!-- ////////////////////////// -->
+    <!-- add in social media logos -->
+    <!-- ////////////////////////// -->
+
+    <div class="horizontal"></div>
+    <form class="cta-form" name="sign-up" netlify>
+      <div>
+        <label for="full-name">Full Name</label>
+        <input
+          id="full-name"
+          type="text"
+          placeholder="John Smith"
+          name="full-name"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="email">Email Address</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="me@example.com"
+          name="email"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="select-where">Where did you hear from us?</label>
+        <select id="select-where" name="select-where" required>
+          <option value="">Please chose one option:</option>
+          <option value="friends">Friends and family</option>
+          <option value="youtube">YouTube video</option>
+          <option value="Podcast">Podcast</option>
+          <option value="Facebook">Facebook</option>
+        </select>
+      </div>
+
+      <button class="btn btn--form">Sign up now</button>
+      <!-- <input type="checkbox">
+      <input type="number"> -->
+    </form>
+  </body>
+</html>

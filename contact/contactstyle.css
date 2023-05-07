@@ -1,0 +1,114 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-me {
+  display: flex;
+  justify-content: center;
+  align-items: 100%;
+  width: 100%;
+  margin: 5rem;
+  word-break: break-all;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  line-height: 0rem;
+}
+
+.title-intro {
+  font-weight: 1rem;
+}
+
+h1 {
+  font-size: 6.5rem;
+  text-align: start;
+}
+
+.title-intro {
+  font-size: 2.5rem;
+  color: #000;
+}
+
+.horizontal {
+  width: 100%;
+  border-top: 1px solid rgb(128, 124, 124);
+  padding-bottom: 4rem;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+  height: 50%;
+  padding: 2rem 5rem 2rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: 1px solid black;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 23px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn--form {
+  background-color: #3d3b38;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+  border-radius: 9px;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #2e2a27;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
