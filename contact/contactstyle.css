@@ -1,18 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
   height: 100%;
   font-family: "Roboto", sans-serif;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 2.5rem;
+  margin: 2rem 2rem 0;
+}
+
+.nav {
+  display: flex;
+  margin-left: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+nav li:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 #contact-me {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: 100%;
+  align-items: center;
   width: 100%;
-  margin: 5rem;
+  margin: 7rem;
   word-break: break-all;
 }
 
@@ -20,7 +54,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  line-height: 0rem;
+  line-height: 10rem;
 }
 
 .title-intro {
@@ -43,13 +77,20 @@ h1 {
   padding-bottom: 4rem;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  /* width: 80rem; */
+}
+
 .cta-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 3.2rem;
   row-gap: 2.4rem;
   height: 50%;
-  padding: 2rem 5rem 2rem;
+  padding: 2rem 5rem 2rem 0;
+  margin-bottom: 5rem;
 }
 
 .cta-form label {
@@ -59,14 +100,14 @@ h1 {
   margin-bottom: 1.2rem;
 }
 
-.cta-form input,
-.cta-form select {
+.cta-form input {
   width: 100%;
   padding: 1.2rem;
   font-size: 1.8rem;
   font-family: inherit;
   color: inherit;
   border: 1px solid black;
+  max-width: 40rem;
   background-color: #fdf2e9;
   border-radius: 9px;
   box-shadow: 0 1px 23px rgba(0, 0, 0, 0.1);
@@ -82,6 +123,7 @@ h1 {
   font-size: 2rem;
   font-weight: 600;
   padding: 1.6rem 3.2rem;
+  max-width: 15rem;
   border-radius: 9px;
   transition: all 0.3s;
   border: none;
@@ -99,7 +141,7 @@ h1 {
 
 .btn--outline:hover,
 .btn--outline:active {
-  background-color: #fdf2e9;
+  background-color: #888480;
   box-shadow: inset 0 0 0 3px #fff;
 }
 
@@ -109,6 +151,6 @@ h1 {
 }
 
 .btn--form:hover {
-  background-color: #fff;
-  color: #555;
+  background-color: #888480;
+  color: #ffffff;
 }

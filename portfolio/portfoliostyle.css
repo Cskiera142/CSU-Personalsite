@@ -1,10 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 200%;
-  /* overflow: hidden; */
+  flex-direction: column;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
 }
 
 #portfolio {
@@ -17,3 +28,35 @@ img {
   height: 30rem;
   border-radius: 10px;
 }
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 2.5rem;
+  margin: 2rem 2rem 0;
+}
+
+.nav {
+  display: flex;
+  margin-left: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+nav li:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+.horizontal {
+  width: 100%;
+  border-top: 1px solid rgb(128, 124, 124);
+  padding-bottom: 4rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000;

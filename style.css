@@ -46,6 +46,11 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 nav li:hover {
   cursor: pointer;
   opacity: 80%;
@@ -86,9 +91,14 @@ nav li:hover {
   overflow: hidden;
 }
 
+h1 {
+  color: #000;
+}
+
 .row {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 5rem;
 }
 
@@ -232,11 +242,47 @@ h1 {
 #facts-list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   font-size: 1.4rem;
 }
 
 .facts {
   color: rgb(129, 123, 123);
   line-height: 3rem;
+}
+
+#skills-card {
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  box-shadow: 0 1px 23px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.chart-section {
+  height: 5rem;
+  width: 50rem;
+  background-color: #fff;
+  border-top: dotted 1px #000;
+  border-left: solid 1px #000;
+}
+
+/* figure out nth of child */
+
+.chart-sections :nth-child(4) {
+  border-bottom: 1px solid #000;
+}
+
+.chart-skills {
+  position: absolute;
+  top: 29%;
+  left: 50%;
+  transform: translate(-50% -50%);
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  background-color: #000;
 }

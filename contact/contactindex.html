@@ -8,6 +8,22 @@
     <title>Contact</title>
   </head>
   <body>
+    <nav>
+      <div><strong>Colton</strong> Skiera</div>
+      <ul class="nav">
+        <!-- <li class="nav">Home</li> -->
+        <li target="#" class="nav">
+          <a href="/index.html" target="_blank">About Me</a>
+        </li>
+        <li class="nav">
+          <a href="portfolio/portfolioindex.html" target="_blank">Portfolio</a>
+        </li>
+        <li class="nav">
+          <a href="contact/contactindex.html" target="_blank">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="horizontal"></div>
     <section id="contact-me">
       <div class="contact-me">
         <h1><strong>contact.</strong></h1>
@@ -20,45 +36,38 @@
     <!-- ////////////////////////// -->
     <!-- add in social media logos -->
     <!-- ////////////////////////// -->
+    <!-- add updated headshot photo -->
+    <!-- ////////////////////////// -->
 
     <div class="horizontal"></div>
-    <form class="cta-form" name="sign-up" netlify>
-      <div>
-        <label for="full-name">Full Name</label>
-        <input
-          id="full-name"
-          type="text"
-          placeholder="John Smith"
-          name="full-name"
-          required
-        />
-      </div>
+    <div class="container">
+      <form class="cta-form" name="sign-up" netlify>
+        <div>
+          <label for="full-name">Full Name</label>
+          <input
+            id="full-name"
+            type="text"
+            placeholder="John Smith"
+            name="full-name"
+            required
+          />
+        </div>
 
-      <div>
-        <label for="email">Email Address</label>
-        <input
-          id="email"
-          type="email"
-          placeholder="me@example.com"
-          name="email"
-          required
-        />
-      </div>
+        <div>
+          <label for="email">Email Address</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="me@example.com"
+            name="email"
+            required
+          />
+        </div>
 
-      <div>
-        <label for="select-where">Where did you hear from us?</label>
-        <select id="select-where" name="select-where" required>
-          <option value="">Please chose one option:</option>
-          <option value="friends">Friends and family</option>
-          <option value="youtube">YouTube video</option>
-          <option value="Podcast">Podcast</option>
-          <option value="Facebook">Facebook</option>
-        </select>
-      </div>
-
-      <button class="btn btn--form">Sign up now</button>
-      <!-- <input type="checkbox">
+        <button class="btn btn--form">Sign up now</button>
+        <!-- <input type="checkbox">
       <input type="number"> -->
-    </form>
+      </form>
+    </div>
   </body>
 </html>
