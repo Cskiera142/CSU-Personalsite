@@ -286,3 +286,16 @@ h1 {
   height: 20rem;
   background-color: #000;
 }
+
+/* Why is everything squished and overlapping?... */
+
+@media screen and (max-width: 1024px) {
+  #home,
+  #portfolio,
+  #contact-me {
+    height: 100vh;
+  }
+  .row {
+    flex-direction: column;
+  }
+}
